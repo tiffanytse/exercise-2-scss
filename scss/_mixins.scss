@@ -1,0 +1,15 @@
+// Mixins
+
+@mixin button($bg-color, $hover-color, $text-color){
+	background-color: $bg-color;
+	color: $text-color;
+	padding: .5em 1em;
+	border-radius: 3px;
+	margin: 1em;
+	display: inline-block;
+	text-decoration: none;
+	transition: all 150ms ease-in-out;
+	&:hover{
+		background-color: $hover-color;
+	}
+}
